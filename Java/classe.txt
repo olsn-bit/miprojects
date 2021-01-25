@@ -1,0 +1,17 @@
+variables - dades = Num,string
+
+operacions aritmètiques
+
+bool
+and ,or = && ,||
+
+!bool
+
+public class
+public static
+void
+nom de classe = nom d'arxiu
+
+Errors:
+expect (;)
+can not find symbol

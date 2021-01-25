@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Corona2DGame:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Corona2DGame_jar</output-path>
+    <root id="archive" name="Corona2DGame.jar">
+      <element id="module-output" name="Corona2DGame" />
+    </root>
+  </artifact>
+</component>

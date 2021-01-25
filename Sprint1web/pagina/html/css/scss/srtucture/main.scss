@@ -1,0 +1,166 @@
+@import "_mixins.scss";
+@import "_variables.scss";
+
+.title {
+  padding: 60px;
+  text-align: center;
+  background: #000000;
+  color: $color-blue;
+  font-size: 30px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.contenedor {
+  background-color: transparent;
+  display: flex;
+  height: 800px;
+}
+
+.contenedormenu {
+  display: flex;
+  flex-direction: column;
+  background-color: #263238;
+  width: 230px;
+}
+
+.contenedordescripcio {
+  padding: 10px;
+  background-color: transparent;
+  width: 100%;
+}
+
+.linkmenu {
+  @include llista-sense-estil;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+
+#linkProjecte1 {
+  margin-top: 10px;
+}
+
+.botoMenu {
+  cursor: pointer;
+}
+
+.tab botoMenu.active {}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #ffffff;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+
+.change {
+  .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+
+  .bar2 {
+    opacity: 0;
+  }
+
+  .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+}
+
+/* Fade out the second bar */
+
+/* Rotate last bar */
+
+.Footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: #de5a11;
+  text-align: center;
+  height: 100%;
+}
+
+.botoPeuPag {
+  border-radius: 4px;
+  background-color: #263238;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 10px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 20px;
+
+  span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+
+    &:after {
+      content: '\00bb';
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: 0.5s;
+    }
+  }
+
+  &:hover span {
+    padding-right: 25px;
+
+    &:after {
+      opacity: 1;
+      right: 0;
+    }
+  }
+}
+
+#Buscador {
+  padding: 11px;
+  border: 3px solid #000000;
+  border-radius: 20px;
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+//Media Querry amplada màxima 600 pixels.
+
+@media only screen and (max-width: 600px) {
+  .contenedor {
+    flex-direction: column;
+  }
+
+  .contenedormenu {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contenedordescripcio {
+    height: 100%;
+  }
+
+  #Buscador {
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+
+  .linkmenu {}
+
+  body {
+    font-size: 20px;
+  }
+}

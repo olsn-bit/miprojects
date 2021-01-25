@@ -1,0 +1,14 @@
+Al descomprimir el .zip veuràs que hi ha:
+
+     un arxiu que va solt: "CrearRegistre.java. Compila'l i executa'l. Això te crearà un arxiu amb una carrega inicial de dades.
+    una carpeta nomenada "paquetExemple" que conté 4 arxius .java:
+        GestioDades.java -> conté un exemple de com gestionar dades en un array bidimensional. -> String[][] dades = new String[MIDA][NUMCAMPS];
+        LlegirArxiu.java  -> Per a llegir les dades de l'arxiu.
+        GuardarArxiu.java -> Per a guardar dades en l'arxiu.
+        Principal.java
+
+ Comença mirant Principal.java i a partir d'ell veuràs exemples de com realitzar les següents accions:
+
+    Llegir d'un fitxer i carregar les dades llegides en l'objecte de la classe GestioDades
+    Manipular les dades de l'objecte de la classe GestioDades
+    Guardar les dades desde l'objecte de la classe GestioDades al fitxer

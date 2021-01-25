@@ -1,0 +1,6 @@
+5
+fila1camp1/fila1camp2/fila1camp3/fila1camp4/fila1camp5
+fila2camp1/fila2camp2/fila2camp3/fila2camp4/fila2camp5
+fila3camp1/fila3camp2/fila3camp3/fila3camp4/fila3camp5
+fila4camp1/fila4camp2/fila4camp3/fila4camp4/fila4camp5
+fila5camp1/fila5camp2/fila5camp3/fila5camp4/fila5camp5

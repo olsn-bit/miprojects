@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<LINK REL=StyleSheet HREF="gestioprojectes.css" TYPE="text/css" MEDIA=screen>
+<script src="gestioprojectes.js"></script>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Gestió emp. Monstià</title>
+
+</head>
+
+<body>
+
+  <div class="flex-container">
+    <div class="capsalera">
+      <h1>Gestió empresarial Montsià</h1>
+      <h2>Gestió de projectes</h2>
+
+    </div>
+
+    <div id="sidebar">
+      <header>
+        <a href="#">Projectes de undefined</a>
+      </header>
+      <ul class="nav">
+        <li>
+          <a id="projecte1" onclick="changeData(this.id)">
+            Projecte 1
+          </a>
+        </li>
+        <li>
+          <a id="projecte2" onclick="changeData(this.id)">
+            Projecte 2
+          </a>
+        </li>
+        <li>
+          <a id="projecte3" onclick="changeData(this.id)">
+            </i> Projecte 3
+          </a>
+        </li>
+        <li>
+          <a id="projecte4" onclick="changeData(this.id)">
+            </i> Projecte 4
+          </a>
+        </li>
+        <li>
+          <a id="projecte5" onclick="changeData(this.id)">
+            Projecte 5
+          </a>
+        </li>
+        <li>
+          <a id="projecte6" onclick="changeData(this.id)">
+            Projecte 6
+          </a>
+        </li>
+        <li>
+          <a id="projecte7" onclick="changeData(this.id)">
+            Projecte 7
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- Content -->
+    <div id="content">
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+
+        </div>
+      </nav>
+      <div class="container-fluid">
+
+        <form>
+          <h1 id="projectnametitol">Projecte "undefined"</h1>
+
+          <!-- NAME FIELD -->
+          <div class="form-field">
+            <label for="projectname" class="label--required">Nom del projecte</label>
+
+            <input id="projectname" required type="text" placeholder="Projecte 23">
+
+          </div>
+
+          <!-- PHONE FIELD -->
+          <div class="form-field">
+            <label for="description" class="label--required">Descripció del projecte</label>
+
+            <input id="description" required type="text" placeholder="......" />
+
+          </div>
+
+          <!-- EMAIL FIELD -->
+          <div class="form-field">
+            <label for="responsable" class="label--required">Responsable del Projecte</label>
+
+            <input id="responsable" required type="text" placeholder="Federico Jolderqués" />
+
+          </div>
+
+
+
+          <!-- BUTTONS -->
+        <div>
+      
+            <button type="submit" class="boto">Editar</button>
+            <button type="submit" class="boto">Eliminar</button>
+
+          </div>
+
+        </form>
+        </p>
+      </div>
+    </div>
+
+
+  </div>
+
+
+
+
+
+
+
+</body>
+
+</html>

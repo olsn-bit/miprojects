@@ -1,0 +1,12 @@
+Corona 2D Game:
+start-init Game
+Base Window JPANEL-window.java
+Game game jframe-game.java
+player player.java
+
+Game Idea:
+  1 Map = Street view
+  2 Map moves when you walk
+  3 You have to dodge contaminated trails and clean your hands in case  you do (stay home)
+  4 Clean Hands in spots
+  5 Continue to next level till end with escalating difficulty and wins points for level passed.

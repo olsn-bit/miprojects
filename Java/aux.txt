@@ -1,0 +1,24 @@
+id() →
+key() →
+lang() → 
+last() →
+local-name() → 
+name() → 
+namespace-uri() → 
+normalize-space() → 
+not() → 
+number() → 
+position() → 
+round() → 
+starts-with() → 
+string() → 
+string-length() → 
+substring() → 
+substring-after() → 
+substring-before() → 
+sum() → 
+system-property() → 
+translate() → 
+true() → 
+unparsed-entity-url() → 
+

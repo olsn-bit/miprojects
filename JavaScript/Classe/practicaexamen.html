@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Examen</title>
+
+	</head>
+  <style>
+
+      body {
+      background-color: DarkTurquoise;
+    }
+      div.static {
+        position: static;
+        border: 2px solid #778899;
+    }
+    h2 {
+      text-align: center;
+    }
+
+    div {
+      text-align: center;
+    }
+
+  </style>
+  <form>
+		  Introdueix un numero<br>
+    <div class="static"><br>
+<button type="button" onclick="main();" </button>
+<p id="demo"></p>
+  <input id="num1" type="number">
+
+  <button type="button" onclick="main()"id="butt">click</button>
+  <br><br>
+  </div>
+
+    <p id=array>0</p>
+    <!-- <p id=alt> Nombre mes alt </p>
+    <p id=baix> Nombre mes baix </p>
+    <p id=mitj> Nombre mitja </p> -->
+  </form>
+  <script>
+  function main(){
+    var mitj = 0;
+    var inp = parseInt(document.getElementById("num1").value);
+    if (inp > 19) {
+      alert("Invalid number, please use a number below 20")
+      return
+    }
+    var lista = new Array(inp);
+    for (i = 0; i < inp; i++){
+        lista[i] =  Math.floor((Math.random()*inp)+1);}
+    for (i = 0; i < inp; i++){
+        mitj += lista[i];}
+    // var baix = Math.max.apply(null, lista);
+    // var alt = Math.min.apply(null, lista);
+    // var mitj = mitj / inp;
+    document.getElementById("array").innerHTML =  lista
+    // document.getElementById("alt").innerHTML = "Nombre mes alt "+alt
+    // document.getElementById("baix").innerHTML = "Nombre mes baix "+ baix
+    // document.getElementById("mitj").innerHTML = "Nombre mitj "+ mitj
+  }
+  </script>
+</html>

@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en" class="h-100">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.79.0">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+
+      <a class="navbar-brand" href="./index.php">Proiectus </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="./index.php"><i class="fa fa-home" aria-hidden="true"></i> Inici</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="./blog.php"><i class="fa fa-quote-left" aria-hidden="true"></i> Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./mail.php"><i class="fa fa-envelope" aria-hidden="true"></i> Mail</a>
+          </li>
+
+        </ul>
+        <form class="form-inline my-2 my-lg-0" action="./login.php">
+          <input class="form-control mr-sm-2" type="search" placeholder="email@proiectus.com" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Log In</button>
+        </form>
+      </div>
+
+  	</nav>
+
+    </head>
+  <title>Sticky Footer Navbar Template · Bootstrap v4.5</title>
+  <!-- https://www.iloveimg.com/resize-image -->
+  <img src="imgchatOptimitzada.png" class="img-fluid" alt="Responsive image">
+  <!-- Bootstrap core CSS -->
+  <!-- <link href="./css/bootstrap/bootstrap.min.css" rel="stylesheet"> -->
+  <link href="./scss/compiled/bootstrap.css" rel="stylesheet">
+
+  <!-- Bootstrap reboot CSS -->
+  <!-- <link href="./css/bootstrap/bootstrap-reboot.min.css" rel="stylesheet"> -->
+  <link href="./scss/compiled/bootstrap-reboot.css" rel="stylesheet">
+
+  <!-- Bootstrap grid CSS -->
+  <!-- <link href="./css/bootstrap/bootstrap-grid.min.css" rel="stylesheet"> -->
+  <link href="./scss/compiled/bootstrap-grid.css" rel="stylesheet">
+
+  <!-- Quicksand google webfont CSS -->
+  <link href="./css/quicksand/quicksand.min.css" rel="stylesheet">
+
+  <!-- Font Awesome webfont CSS -->
+  <!-- WARNING: The version of Font Awesome used is the local 4.7.0, so the icon website where everyone is looking is no longer useful, use this instead https://fontawesome.com/v4.7.0/icons -->
+  <link href="./css/fontawesome/font-awesome.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="./css/custom.css" rel="stylesheet">
+
+</head>
+  <script type="text/javascript" src="js/jquery/jquery-3.5.1.min.js"></script>
+  <script type="text/javascript" src="js/chatcustom.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="css/chatcustom.css">
+  <body class="d-flex flex-column h-100">
+    <!-- <section>
+                            
+    </section> -->
+    <p id="missatgesbd" class="d-none">
+    Hello Philip! :) ~ Enviat el: 10/11/12 a les 10:24 | Per Alberto Dos Santos Rodríguez.;
+    Hola que tal?~ Enviat el: 10/11/12 a les 10:24 | Per Alberto Dos Santos Rodríguez.;
+    tot be home~ Enviat el: 10/11/12 a les 10:24 | Per Philip Monsent.;
+    treballant fent javascript ~ Enviat el: 10/11/12 a les 10:24 | Per Alberto Dos Santos Rodríguez.;
+    aixi m'agrada aprenent~ Enviat el: 10/11/12 a les 10:24 | Per Philip Monsent.;
+    parlem mes tard doncs~ Enviat el: 10/11/12 a les 10:24 | Per Alberto Dos Santos Rodríguez.;
+    ok, adeu :)~ Enviat el: 10/11/12 a les 10:24 | Per Philip Monsent.;
+
+   </p>
+	<!-- <div class="banner text-center text-white"><h2></h2></div> -->
+
+    <main class="flex-shrink-0">
+      <div class="chat_window">
+          <div class="top_menu">
+
+              <div id="chatFocus"class="title">Chat</div>
+
+          </div>
+          <ul class="messages"></ul>
+          <!-- <script type="text/javascript">
+          function loadMessageToForm() {
+            // quota = $("#inputMessage").val();
+            // quota = document.getElementById("inputMessage").value;
+            document.getElementById("inputMessageInvis").value = document.getElementById("inputMessage").value;
+            // console.log(document.getElementById("inputMessage").value);
+            // console.log(quota);
+            alert(document.getElementById("inputMessage").value);
+          }
+          </script> -->
+          <div class="bottom_wrapper clearfix">
+            <!-- <form  id="sendMessageForm" action="" > -->
+              <div class="d-none"id="actualuser">
+                Alberto DosSantos.
+              </div>
+              <div class="message_input_wrapper">
+
+                  <!-- <input id="inputMessageInvis" class="d-none" name="msgContainer" /> -->
+                  <input id="inputMessage" class="message_input" name="msgContainer"placeholder="Escriu el teu missatge aquí..." />
+
+
+
+                </div>
+                 <!-- class="btn btn-lg " -->
+                 <style media="screen">
+                   .prova{
+                     width: 100px;
+                      height: 50px;
+                      display: inline-block;
+                      float: right;
+                   }
+                 </style>
+                <div class="send_message">
+                  Enviar
+                  <!-- <button class="btn-lg btn-success text-center" id="enviarLeft"type="submit">Envia</button> -->
+                </div>
+              </form>
+                  <!-- <script type="text/javascript">
+                    console.log(document.getElementById("dropdownMenuButton").innerHTML);
+                    if (document.getElementById("dropdownMenuButton").innerHTML.includes("Sel·lecciona un usuari")) {
+                      document.getElementById("inputMessage").disabled = true;
+
+                    }
+                  </script> -->
+
+
+
+                    <!-- <form onsubmit="loadMessageToForm()" id="sendMessageForm" action="chat.php" method="get">
+                    <input class="d-none" type="text" name="msgContainer" id="msgContainerID" >-->
+
+
+
+                <!-- </form> -->
+
+
+
+          </div>
+      </div>
+      <div class="message_template">
+          <li class="message">
+              <div class="avatar"></div>
+              <div class="text_wrapper">
+                  <div class="text"></div>
+              </div>
+          </li>
+      </div>
+    </main>
+    <!-- autoplay
+    height
+    loop
+    muted
+    poster	foto fins que es carrega
+    preload
+    src
+    width	 -->
+    <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+    <video width="320" height="240" class="text-center" controls muted preload >
+      <source src="alternativaChat.mp4" width=type="video/mp4">
+        El teu navegador no soporta videos /
+        Your browser does not support the video tag.
+    </video>
+  </body>
+</html>

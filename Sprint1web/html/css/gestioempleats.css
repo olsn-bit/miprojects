@@ -1,0 +1,274 @@
+@import url(https://fonts.google.com/specimen/Quicksand?preview.size=76);
+
+html * {
+  font-family:'Quicksand'!important;
+}
+body{
+  background: #DEE8F1;
+  margin: 0;
+}
+#head {
+    background-color: #004481;
+    text-align: center;
+    color: #ffffff;
+    height: 125px;
+    border-style: solid;
+
+}
+#h1 {
+    margin-top: 20px;
+
+}
+
+#cajon1 {
+    width: 25%;
+    margin: 5px;
+    margin-top: 10px;
+    background-color: #018AC0;
+    height: 480px;
+    float: left;
+
+}
+#cajon2 {
+    margin: 5px;
+    margin-top: 10px;
+    width: 60%;
+    float: right;
+    margin-right: 10px;
+    background-color: #DEE8F1;
+}
+#pEmpleats {
+    background-color: #018AC0;
+    color: #ffffff;
+    font-size: 2vw;
+    line-height: 5vw;
+    text-align: center;
+    }
+#plinea {
+    border-top: 1px solid #000000;
+    margin-left: 1px;
+}
+#ulC {
+    color: #ffffff;
+    padding: 8px;
+    margin-bottom: 7px;
+    margin-left: 15px;
+    background-color: #018AC0;
+    color: #ffffff;
+}
+#ulC li:hover {
+    color:gray;
+}
+#formulari{
+    text-shadow: 1px 1px 1px #263238;
+
+}
+#Dnics {
+    margin-left: 24px;
+
+}
+#Nsscs {
+    margin-left: 21px;
+}
+#adminU {
+    margin-left: 28px;
+}
+#botons {
+    margin-top: 75px;
+}
+input[type=text], select {
+    width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=submit] {
+    width: 70%;
+    background-color: #018AC0;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 45px;
+}
+input[type=submit]:hover {
+    color: #e8e8e8;
+    background-color: #263238;
+    transform: scale(1.1);
+}
+input:hover {
+    color: #e8e8e8;
+    background-color: #263238;
+}
+#img {
+    width:210px;
+    height:200px;
+    background-image: linear-gradient(to bottom right, #79d0b5, #263238);
+    float: right;
+    margin-right: 300px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    transition: width 1s, height 1s;
+
+}
+#img:hover {
+    width: 220px;
+    height: 210px;
+}
+  footer{
+  width: 100%;
+  background: #001B48;
+  color: white;
+  margin-top: 50px;
+  float: left;
+}
+
+.container-footer-all{
+  width: 100%;
+  max-width: 1200px;
+  margin:auto;
+  padding: 40px;
+  background: #001B48;
+}
+
+.container-body{
+  display: flex;
+  justify-content: space-between;
+}
+
+.column1{
+  max-width: 400px;
+
+}
+
+.column1 h1{
+  font-size: 22px;
+}
+
+.column1 p{
+  font-size: 14px;
+  color: #C7C7C7;
+  margin-top: 20px;
+}
+
+.column2{
+  max-width: 400px;
+}
+
+.column2 h1{
+  font-size: 22px;
+}
+
+.links-nav a{
+  margin-top: 20px;
+  color: #C7C7C7;
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+}
+
+.column3{
+  max-width: 400px;
+}
+
+.column3 h1{
+  font-size: 22px;
+}
+
+.row2 {
+  margin-top: 20px;
+}
+
+.row2 label{
+  margin-top: 10px;
+  margin-left: 20px;
+  max-width: 250px;
+  color: #C7C7C7;
+}
+
+.container_footer{
+  width: 100%;
+  background: #001B48;
+}
+
+.footer{
+  max-width: 1200px;
+  margin:auto;
+  /*display: flex;*/
+  justify-content: space-between;
+  padding: 20px;
+  background: #001B48;
+}
+
+.copyright{
+  color: #C7C7C7;
+}
+
+.informacio_politica{
+  text-decoration: none;
+}
+
+.div1{
+  background-color: black;
+}
+
+.menufooter{
+  margin-top: 20px;
+}
+@media only screen and (max-width: 700px) {
+    #cajon1 {
+        width: 100%;
+        height: 50%;
+        margin: 5px;
+        margin-right: 5px;
+    }
+    #head{
+        width: 100%;
+        height: 80%;
+    }
+    #h1{
+        font-size:7vw;
+    }
+    #h2{
+        font-size:6vw;
+        margin-bottom: 5px;
+    }
+    #pEmpleats{
+        font-size:6vw;
+    }
+
+    #ulC{
+        font-size:3vw;
+        margin-left: 15px;
+        font-size:3vw;
+    }
+
+    #cajon2{
+        width: 90%;
+        font-size:4vw;
+    }
+    #botons{
+        width: 100%;
+    }
+    #input{
+        font-size:6vw;
+    }
+    #imagfons{
+        margin-right: -250px;
+    }
+    #img{
+        transition: width 1s, height 1s;
+        width:130px;
+        height:120px;
+    }
+    #img:hover {
+        width:140px;
+        height:130px;
+    }
+}

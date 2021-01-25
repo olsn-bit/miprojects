@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Sprint3Java:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Sprint3Java_jar</output-path>
+    <root id="archive" name="Sprint3Java.jar">
+      <element id="module-output" name="Sprint3Java" />
+    </root>
+  </artifact>
+</component>

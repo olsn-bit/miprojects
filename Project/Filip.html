@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>The HTML5 Herald</title>
+</head>
+
+	<style>
+		
+    html, body { 
+    	height: 100%;
+    	width: 100%;
+    	margin: 0; 
+    }
+  	.cuadrat {
+    	width: 23%;
+    	background: #FF0000;
+        height: 100%;
+        border-radius: 25px;
+  	}
+  	.cuadrat1 {
+    	margin-left:1%;
+    	width: 70%; 
+    	height: 100%; 
+    	background: #0000FF;
+        border-radius: 25px;
+  	}
+  	.cuadrat2 {
+    	width: 	70%; 
+    	background: #FF0000;
+        border-radius: 40%;
+        height: 50%;
+        margin-bottom:4%;
+  	}
+  	.cuadrat3 {
+    	width: 70%; 
+    	height: 50%; 
+    	background: #0000FF;
+        border-radius: 40%;
+  	}
+  	.cuadrat4 {
+    	margin-left:15%;
+    	width: 30%; 
+    	height: 100%; 
+        margin-right:1%;
+    	background: yellow;
+        border-radius: 25px;
+  	}
+  	.cuadrat5 {
+    	width: 65%; 
+    	background: green;
+        border-radius: 25px;
+        margin-right:10%;
+        height: 100%;
+        margin-bottom:4%;
+  	}
+  	p{
+  		text-align:center;
+  		position: relative;
+  		margin:0;
+  		padding:0;
+  		font-size:22px;
+  		font-weight:bold;
+  		text-align: center;
+			 top: 50%;
+			 transform: translateY(-50%);
+  	}
+    .cuadrat6 {
+    	width: 80%; 
+    	background: orange;
+        border-radius: 40%;
+        height: 45%;
+        margin-bottom:4%;
+  	}
+  	.cuadrat7 {
+    	width: 80%; 
+    	height: 45%; 
+    	background: pink;
+        border-radius: 40%;
+        margin-top:7%;
+  	}
+    .cuadrat8 {
+    	width: 70%; 
+    	background: green;
+        height: 35%;
+        border-radius: 25px;
+  	}
+  	.cuadrat9 {
+    	margin-left:1%;
+    	width: 30%; 
+    	height: 35%; 
+    	background: lightgreen;
+        border-radius: 25px;
+  	}
+    .flex-container {
+    
+        display: flex;
+        height: 25%;
+       	width: 95%;
+       	margin:3%;
+    }
+    .flexcolumn{
+        display: flex;
+  		flex-direction: column;
+		height: 100%;
+       	width: 15%;
+        margin-left:1%;
+    }
+    .flex-container2 {
+    
+        display: flex;
+        height: 45%;
+       	width: 98%;
+    }
+    .flexcolumn2{
+        display: flex;
+	  		flex-direction: column;
+				height: 100%;
+       	width: 15%;
+        margin-left:6%;
+        margin-right:1%;
+    }
+    .flex-container3 {
+    
+        display: flex;
+        height: 25%;
+       	width: 98%;
+       	margin-bottom:3%;
+    }
+		@media (max-width: 700px) {
+        .flex-container{
+        	
+        	padding:5px;
+            border-radius: 25px;
+        	flex-direction: column;
+            background-color:grey;
+        }
+        .flex-container3{
+        	 background-color:grey;
+             padding:5px;
+             border-radius: 25px;
+             width: 95%;
+		     margin:3%;
+        }
+        .cuadrat,.cuadrat1{
+        	width:99%;
+            height:50%;
+        }
+		  .flexcolumn,.cuadrat5 {
+		    display: none;
+            
+		  }
+		  .flexcolumn2 {
+		    display: none;
+		  }
+          .cuadrat8,.cuadrat9{
+          	height:20%;
+          }
+		  .cuadrat4{
+		  width:99%;
+          margin-left:2%;
+		}
+		.flex-container2,.flex-container{
+			width: 95%;
+			margin:3%;
+		}
+	</style>
+   	<div class="flex-container">
+    <div class="flexcolumn2">
+          	<div class="cuadrat6"><p>L1</p></div>
+          	<div class="cuadrat7"><p>L2</p></div>
+    	</div>
+  		<div class="cuadrat"><p>1</p></div>
+  		<div class="cuadrat1"><p>2</p></div>
+    </div>
+    <div class="flex-container3">
+  		<div class="cuadrat4"><p>3</p></div>
+                <div class="flexcolumn">
+          <div class="cuadrat2"><p>R1</p></div>
+          <div class="cuadrat3"><p>R2</p></div>
+    	</div>
+  		<div class="cuadrat5"><p>4</p></div>
+    </div>
+    <div class="flex-container2">
+  		<div class="cuadrat8"><p>5</p></div>
+  		<div class="cuadrat9"><p>6</p></div>
+    </div>
+</body>
+</html>

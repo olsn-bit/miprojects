@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="bingopau:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/bingopau_jar</output-path>
+    <root id="archive" name="bingopau.jar">
+      <element id="module-output" name="bingopau" />
+    </root>
+  </artifact>
+</component>

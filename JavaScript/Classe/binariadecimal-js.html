@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Binari a Decimal</title>
+	</head>
+		<script>
+			function fun1(){
+				var binari = parseInt(document.getElementById("binari").value);
+
+        var decimal = parseInt(binari, 2); // A la base 2
+        document.getElementById("paragraf").innerHTML = "Numero Decimal = "+decimal;
+      }
+		</script>
+	<body>
+
+			Numero Binari:
+			<input id="binari" type="number">
+			<button onclick="fun1()">Convertir</button>
+
+		<a id="paragraf">
+			 Numero Decimal = X;
+	 </a>
+
+	</body>
+</html>

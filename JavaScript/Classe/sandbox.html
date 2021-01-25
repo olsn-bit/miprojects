@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+</head>
+<body style ="background:green" >
+
+<button type="button" onclick="Inici();">Clic</button>
+<canvas onmousedown="cacamerda()" id="quadre" width="480" height="480">
+El teu navegador no soporta Canvas</canvas>
+
+<br>
+
+</form>
+
+<img id="caballo" src="caball.png" width="1" height="1"></img>
+<img id="bandera" src="bandera.png" width="1" height="1"></img>
+<img id="pedra1" src="caca.png" width="1" height="1"></img>
+<script>
+/* Aquí el primer que fem és definir una funció on agarrem per valor el Canvas i el definim de 2Dimensions*/
+var c = document.getElementById("quadre");
+var ctx = c.getContext("2d");
+var tauler;
+var xcb;
+var ycb;
+var xbn;
+var ybn;
+
+
+
+
+//Fem que les funcions s'executen primer.
+
+Dibuixatauler();
+CreaArray();
+IniciArray();
+//Imatge();
+
+//Amb aquesta funció, fem que les funcions Dibuixartaule i Imatge, s'executin quan cliquem al botó.
+function Inici() {
+
+Dibuixatauler();
+xcb = Math.floor(Math.random()*8);
+ycb = Math.floor(Math.random()*8);
+xbn = Math.floor(Math.random()*8);
+ybn = Math.floor(Math.random()*8);
+tauler[xcb][ycb] = 1;
+tauler[xbn][ybn] = 2;
+mirararray();
+
+}
+
+//Aquesta funció, ens permetrà posar la pedra1, quan
+function cacanext() {
+
+Dibuixatauler();
+var xmd = Math.floor(Math.random()*8);
+var ymd = Math.floor(Math.random()*8);
+while (tauler[xmd][ymd] != 0) {
+	xmd = Math.floor(Math.random()*8);
+	ymd = Math.floor(Math.random()*8);
+}
+tauler[xmd][ymd] = 3;
+
+mirararray();
+}
+
+/*Seguidament crearem dos "for" per a crear la taula, primer fà una fila i seguidament crea la resta*/
+function Dibuixatauler() {
+
+for (var y = 0; y < 8; y++) {
+
+	for (var x = 0; x < 8; x++) {
+
+		if ((x+y)%2 == 0) {
+			ctx.fillStyle = "#000000";
+		} else {
+			ctx.fillStyle = "#ffffff";
+		}
+
+		ctx.fillRect(x*60, y*60, 60, 60);
+
+	}
+}
+}
+/*Dalt definim el color de cada quadre i l'amplada de píxels*/
+
+
+/*Ara tenim que crear un Array per a definir cada quadre de la taula, per a fer això el Array ha de ser de dues dimensions*/
+function CreaArray() {
+	tauler = new Array(8);
+	for (i = 0; i < 8; i++) {
+	    tauler[i] = new Array(8);
+	}
+}
+//Aquesta funció, ens permet que la Array s’iniciï i comenci per 0.
+function IniciArray() {
+for (i = 0; i < 8; i++){
+    for(h = 0; h < 8; h++){
+        tauler[i][h] = 0;
+
+    }
+}
+}
+
+
+
+
+//Aquesta funció, ens permet que el caballo conti com 1. Aix ens permetrà que després no es pugui posar cap altre element.
+function mirararray() {
+for (i = 0; i < 8; i++){
+    for(h = 0; h < 8; h++){
+        if (tauler[i][h] == 1){//L'1 és el caballo.
+		ctx.drawImage(caballo, h*60, i*60, 60, 60);
+	} else if (tauler[i][h] == 2){//L'2 és la bandera.
+		ctx.drawImage(bandera, h*60, i*60, 60, 60);
+	} else if (tauler[i][h] == 3){//L'3 és la pedra1.
+		ctx.drawImage(pedra1, h*60, i*60, 60, 60);
+	}
+
+    }
+
+
+}
+}
+var canvas = document.getElementById('quadre');
+var context = canvas.getContext('2d');
+
+function cacamerda() {
+        // conseguir cordenades
+
+          x = event.clientX - 51;
+          y = event.clientY- 8;
+          console.log(tauler)
+          tauler[xcb][ycb] = 0;
+          tauler[Math.floor(y/60)][Math.floor(x/60)] = 1;
+
+          xcb = Math.floor(y/60);
+          ycb = Math.floor(x/60);
+          Dibuixatauler();
+          mirararray();
+        // x - algo = x;
+        // y - algo = y;
+
+        // restarles del canvas
+
+        // consologuearles
+        console.log("Mouse "+Math.floor(x/60)+ " , "+Math.floor(y/60)	 );
+        // cacamerdaposa();
+        // canvas get mouse position onclick
+console.log(tauler);}
+</script>
+</body>
+</html>

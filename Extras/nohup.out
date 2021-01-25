@@ -1,0 +1,9 @@
+python: can't open file 'clienbodserver.py': [Errno 2] No such file or directory
+Traceback (most recent call last):
+  File "clientbodserver.py", line 6, in <module>
+    client.connect((ipserver,9999))
+TimeoutError: [Errno 110] Connection timed out
+Traceback (most recent call last):
+  File "clientbodserver.py", line 6, in <module>
+    client.connect((ipserver,9999))
+TimeoutError: [Errno 110] Connection timed out

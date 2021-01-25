@@ -1,0 +1,27 @@
+Els nodes de retorn de funcio es basen en la ID unica DTD passada.
+La funcio clau retorna un conjunt de nodes de nodes que tenen el valor donat per la clau donada.
+La funcio retorna veritable si el llenguatge de node de context es igual a l'argument de cadena especificat.
+La ultima funcio retorna un nombre igual a la mida de l'context de l'context d'evaluacion d'expressions.
+La funcio de nom local retorna una cadena que representa el nom local del primer node a un conjunt de nodes donat.
+La funcio de nom retorna una cadena que representa el QNAME del primer node a un conjunt de nodes donat.
+
+La funcio namespace-uri retorna una cadena que representa l'URI de l'espai de noms del primer node a un conjunt de nodes donat.
+La funcio normalitzar-espai elimina els espais en blanc inicials i finals d'una cadena, reemplaca les sequencies de caracters d'espais en blanc per un sol espai i retorna la cadena resultant.
+La funcio no torna veritable, si el seu argument es fals. Altrament, retorna fals.
+La funcio de nombre converteix un objecte en un nombre i retorna el nombre.
+
+La funcio de posicio retorna un nombre igual a la posicio de context de l'context d'evaluacion d'expressio.
+La funcio arrodonir retorna un numero que es el sencer mes proper a el nombre donat.
+El comenca amb comprova si la primera cadena comenca amb la segona cadena i retorna vertader o fals.
+Funcio de cadena XPath que converteix el nombre en una cadena.
+La funcio XPath string-length torna la longitud de la cadena.
+La funcio XPath substring () retorna un caracter de cadena seleccionat d'una cadena completa.
+La funcio XPath substring-after retorna la subcadena de la primera cadena d'arguments basada en la primera aparicio de la segona cadena d'arguments despres de tots els caracters.
+La funcio XPath substring-before retorna la subcadena de la primera cadena d'arguments basada en la primera aparicio de la segona cadena d'arguments abans de tots els caracters.
+La funcio retorna la suma de la valor de l'element en un node especificat.
+La funcio de propietat de sistema retorna un objecte que representa la propietat de sistema donada.
+La funcio traduir avalua una cadena i un conjunt de caracters per traduir i retorna la cadena traduida.
+
+
+La funcio retorna veritable si la cadena passada es una cadena normal.
+La funcio unparsed-entity-url () retorna l'URI de l'entitat no analitzada amb el nom donat. Aquestes son dades no XML referenciats en la DTD de el document font.

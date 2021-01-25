@@ -1,0 +1,31 @@
+#anem a fer una caixa que pots triar los albuns de musica i tels obre
+import pyautogui
+from tkinter import*
+import tkinter as tk
+def finestra():
+    finestra = tk.Tk()
+    finestra.title("Música")
+    finestra.geometry("200x200+600+250")
+    ACC = Button(finestra, text=("Aceptar"), command=BPRESSED) .pack()
+    ALB = Listbox()
+    ALB.pack()
+    ALB.insert(END, "TWICE", "CANSERBERO", "SFDK")
+    mainloop()
+
+def BPRESSED():
+    if ALB == ("TWICE")
+    print("hola")
+
+
+
+def core():
+    MICON = pyautogui.locateOnScreen('M_ICON.PNG')
+    MAPP = pyautogui.center((MICON))
+    pyautogui.click(MAPP)
+
+def TWICE():
+    MTWICE = pyautogui.locateOnScreen("TWICE_ICON.PNG")
+    M2 = pyautogui.center((MTWICE))
+    pyautogui.click(M2)
+
+finestra()

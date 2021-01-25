@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" style="font-family:'Quicksand'!important;">
+<LINK REL=StyleSheet HREF="css/menu.css" TYPE="text/css" MEDIA=screen>
+<head>
+  <meta charset="UTF-8">
+  <title>Gestió emp. Monstià</title>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class="flex-container">
+    <div class="capsalera">
+      <h1>Gestió empresarial Montsià</h1>
+      <h2>Búsqueda de centres</h2>
+      <div class="flex-container2">
+        <div class="user">
+          <p>Admin</p>
+        </div>
+        <div>
+          <button class="usericon"> <img src="images/usericon.png" alt="picture" width="40" height="40"> </button>
+        </div>
+
+      </div>
+      <p>Selecciona el centre desitjat.</p>
+
+    </div>
+
+    <!--Carrousel -->
+    <div class="slider">
+      <input type="radio" name="testimonial" id="t-1">
+      <input type="radio" name="testimonial" id="t-2" checked>
+      <input type="radio" name="testimonial" id="t-3">
+
+      <div class="testimonials">
+        <label class="item" for="t-1">
+          <img src="images/iesdeltebre.png" alt="picture">
+          <p>Institut de Deltebre</p>
+        </label>
+        <label class="item" for="t-2">
+          <img src="images/iesdelebre.png" alt="picture">
+          <p>Ies de l'Eebre</p>
+        </label>
+        <label class="item" for="t-3">
+          <img src="images/iesmontsia.png" alt="picture">
+          <p>Ies Monstià</p>
+        </label>
+
+      </div>
+      <div class="dots">
+        <label for="t-1" class="botonets"></label>
+        <label for="t-2" class="botonets"></label>
+        <label for="t-3" class="botonets"></label>
+
+      </div>
+    </div>
+    <!-- Botonera -->
+    <div class="botonera">
+      <table class="table">
+        <th>
+          <a href="gestiopropostes.html">
+            <button src="">Propostes</button>
+          </a>
+        </th>
+        <th> <a href="gestiopressupostos.html">
+            <button>Pressupostos</button>
+          </a>
+
+        </th>
+        <th> <a href="php/gestioempleats.php">
+            <button>Empleats</button>
+          </a>
+        </th>
+        <th> <a href="php/gestioprojectes.php">
+            <button>Projectes</button>
+          </a>
+        </th>
+        <th> <a href="#popup1">
+            <button class="botomapa"> <img src="images/mapicon.png" alt="picture" width="40" height="40"></button>
+          </a>
+        </th>
+      </table>
+
+    </div>
+    <!-- Buscador -->
+
+    <div class="wrap">
+      <div class="search">
+        <input autofocus placeholder="Search" type="text" name="search" class="form-control" autocomplete="off" id="search">
+        <!--<button onclick="Function(Function)"  type="submit" class="searchButton"> -->
+        <ul class="list-group" id="list"></ul>
+      </div>
+
+    </div>
+    <div id="popup1" class="overlay">
+      <div class="popup">
+        <h2>Mapa dels Instituts</h2>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+          <iframe id="mapaiframe"src="https://www.mapsdirections.info/mapea-mi-ruta/viewMap.php?route=284893">
+          </iframe>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+</body>
+<footer>
+    <div class="container-footer-all">
+      <div class="container-body">
+        <div class="column1">
+          <h1>Empresag3daw2</h1>
+           <p>Nosaltres ens encarreguem de gestionar les propostes, pressupostot, empleats i projectes. </p>
+        </div>
+        <div class="column2">
+          <h1>Torna a inici</h1>
+          <div class="menufooter">
+            <ul class="links-nav">
+                <li><a href="menu.html">Inici</a></li><br>
+            </ul>
+          </div>
+        </div>
+        <div class="column3">
+          <h1>Informació de contacte</h1>
+          <div class="row2">
+            <img src="">
+             <label>Empresag3daw2,
+                    Carrer Madrid, 35, 49,
+                    43870 Amposta <br></label>
+          </div>
+
+          <div class="row2">
+            <img src="">
+             <label>Telf. 977700043 <br></label>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="container_footer">
+    <div class="footer">
+    <div class="copyright">
+      © 2020 Tots els drets reservats |
+    </div>
+    <div class="informacio_politica">
+      Informació companya | Privacio i Politica | Termins i Condicions
+    </div>
+  </div>
+</div>
+  </footer>
+<script src="menu.js"></script>
+
+</html>

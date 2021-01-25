@@ -1,0 +1,3 @@
+SO:Windows 10 Home
+IDE: IntelliJ IDEA
+COMPILADOR: Java 8 Versió 52 - JDK 1.8.0_221

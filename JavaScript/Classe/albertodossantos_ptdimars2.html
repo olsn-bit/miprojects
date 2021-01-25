@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>The while</title>
+	</head>
+	<h1> PT6 M08 JavaScript</h1>
+	<body>
+		<form>
+			<h2><strong>Introdueix un nombre:<strong></h2>
+      <h4>Amb aquest nombre farem un cuadrat amb asteriscs, el nombre proporcionat será les dimensions de un costat.</h4>
+			<input type="number"id="num1">
+			<button type="button" onclick="main()"id="butt">Build !</button>
+		</form>
+    <p id="result"></p>
+	</body>
+  <script>
+
+	function main(){
+		var input = parseInt(document.getElementById("num1").value)
+		var ast = 0;
+		var asta = 1;
+		var text = "";
+		var final = "";
+		var ho = "o";
+		while (ast < input){
+			for (var i = 0; i < asta; i++) {
+  		text += "H"
+			}
+			for (var a = 0; a < (input-asta); a++) {
+			text += "O"
+			}
+			final += text + "<br>"
+			text = ""
+			asta += 1;
+			ast ++;
+		}
+
+		document.getElementById("result").innerHTML = final;
+	}
+   </script>
+</html>

@@ -1,0 +1,10 @@
+RUTES RELATIVES DE PARELLES:TXT!!!!!!!!!!!
+
+hola-hello,bon dia-good morning,adeu-bye,cotxe-car,casa-house,nen-kid,paper-paper,rellotge-watch,got-glass,
+
+
+comprovació d'arxius a start.java a start
+comprovem parelles.TXT i registre.txt si existeix sino el creem. a start
+també iniciar el registre a start!! OBJECTE fet
+RUTES RELATIVES DE PARELLES:TXT!!!!!!!!!!!
+al final de la partida guardar el registre.!!!

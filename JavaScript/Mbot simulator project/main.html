@@ -1,0 +1,145 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+<style>
+    .buttons{
+        padding: 15px 25px;
+    }
+</style>
+  <meta charset="utf-8">
+
+  <title>Mbot Movement Simulator</title>
+  <h1 style="margin-left:300px;">Simulation</h1>
+  <!-- <canvas style="border-style: ridge;margin-left:300px;"onmousemove="paint();" id="canvasid" width="400" height="400"></canvas> -->
+  <canvas style="border-style: ridge;margin-left:300px;"id="canvasid" width="400" height="400"></canvas>
+  <button class="buttons"onclick="main()"type="button">Init</button>
+  <button class="buttons"onclick="Reset()"type="button">Reset</button>
+  <button class="buttons"onclick="start()"type="button">Start</button>
+  <h2 style="margin-left:300px;">Data</h2>
+
+</head>
+
+<body>
+    <script>
+        var canvas = document.getElementById("canvasid");
+        var ctx = canvas.getContext("2d");
+        var carx = 210,cary = 210;
+        var carw = 20,carh = 40;
+        // var path = new Array;
+        var path = [48, 85.125, 337, 86.125, 346, 303.125, 432, 389.125];
+        var carcolor = "green";
+
+        function main(){
+            // ctx.clearRect(carx,cary,carh,carh)
+            drawpath();
+            ctx.fillStyle = carcolor;
+            ctx.fillRect(carx,cary,carw,carh);
+            ctx.stroke();
+        }
+        function objmovement(movement){
+            // ctx.translate(200,200);
+            var centreX = carx+carw/2;
+            var centreY = cary+carh/2;
+            // ctx.save()
+            // ctx.clearRect(0,0,400,400);
+
+            ctx.fillStyle = carcolor;
+            if (movement == "forward") {
+                cary -= 1;
+                // updatepath();
+                ctx.fillRect(carx,cary,carw,carh)
+            }else if (movement == "backward") {
+                cary += 1;
+                // updatepath();
+                ctx.fillRect(carx,cary,carw,carh)
+            }else if (movement == "right turn") {
+                // updatepath();
+                ctx.translate(centreX,centreY);
+                ctx.rotate(5*Math.PI/180);
+                ctx.fillRect(-carw/2, -carh/2,carw,carh);
+            }else if (movement == "left turn"){
+                // updatepath();
+                ctx.translate(centreX,centreY);
+                ctx.rotate(359*Math.PI/180);
+                ctx.fillRect(-carw/2, -carh/2,carw,carh);
+            }
+            // ctx.rx.save()
+            ctx.stroke();
+        }
+        function paint(){
+
+            document.body.onmousedown = function() {
+            var rect = canvasid.getBoundingClientRect();
+            var xclicked = (event.clientX - rect.left);
+            var yclicked = (event.clientY - rect.top);
+            path.push(xclicked,yclicked);
+            ctx.fillStyle = "blue";
+            ctx.fillRect(xclicked,yclicked,8,8);
+            ctx.stroke();
+            }
+        }
+        function drawpath(){
+            ctx.beginPath();
+            for (var i = 0; i < path.length; i+=2) {
+                ctx.moveTo(path[i], path[i+1]);
+                ctx.lineTo(path[i+2],path[i+3]);
+            }
+            ctx.stroke();
+        }
+        function updatepath(){
+            ctx.clearRect(0,0,canvas.width,canvas.height);
+            drawpath();
+            ctx.stroke();
+        }
+        function start(){
+            // var centreX = carx+carw/2;
+            // var centreY = cary+carh/2;
+            detect = ctx.getImageData(carx+carw/2,cary-10,1,1).data[3]
+            detect2 = ctx.getImageData(carx+carw/2,cary-10,1,1).data
+            console.log(detect,detect2)
+            if (detect == 0){
+                objmovement("forward");
+                start();
+            }
+            else {
+                for (var i = 0; i < 90; i++) {
+                    objmovement("right turn");
+                }
+                // drawpath(    );
+                // update();
+            }
+            // while (ctx.getImageData(centreX,centreY,1,1).data != [0,0,0,255]) {
+            //     setTimeout(objmovement("forward"), 1000);
+            //     console.log(1)
+            //
+            // }
+
+        }
+        function update(){
+            ctx.clearRect(0,0,canvas.width,canvas.height);
+            updatepath();
+            ctx.fillStyle = carcolor;
+            ctx.fillRect(carx,cary,carw,carh);
+            ctx.stroke();
+        }
+        document.addEventListener('keydown', function(event) {
+        if(event.keyCode == 37) {
+            objmovement("left turn");
+        }
+        else if(event.keyCode == 39) {
+            objmovement("right turn");
+        }
+        else if(event.keyCode == 38) {
+            objmovement("forward");
+        }
+        else if(event.keyCode == 40) {
+            objmovement("backward");
+        }
+        });
+        function Reset(){
+            location.reload();
+        }
+  </script>
+</body>
+</html>

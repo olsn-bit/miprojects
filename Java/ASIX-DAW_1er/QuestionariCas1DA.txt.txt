@@ -1,0 +1,5 @@
+El Sistema Operatiu usat (posar també versió): Windows 10
+El IDE (versió) o editor de text: Atom 1.40.1
+La versió del compilador: Java SE Development Kit 8 Update 221
+Les instruccions per a compilar des de consola:javac QuestionariCas1DA.java
+Les instruccions per a executar des de consola:java QuestionariCas1DA

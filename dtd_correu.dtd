@@ -1,0 +1,29 @@
+<!ELEMENT enviados (correu)>
+  <!ELEMENT correu (emissor, objecte, enviament, receptor)>
+    <!ELEMENT emissor (nom_emissor, telefon_emissor, email_emissor?,adresa_emissor)>
+      <!ELEMENT nom_emissor (#PCDATA)>
+      <!ELEMENT telefon_emissor (#PCDATA)>
+      <!ELEMENT email_emissor (#PCDATA)>
+      <!ELEMENT adresa_emissor (#PCDATA)>
+      <!ATTLIST emissor sexe_emissor CDATA #REQUIRED>
+      <!ATTLIST telefon_emissor pais_emissor CDATA #REQUIRED>
+    <!ELEMENT objecte (tipus, pes, descripcio?, fragil, refrigeracio)>
+      <!ELEMENT tipus (#PCDATA)>
+      <!ELEMENT pes (#PCDATA)>
+      <!ELEMENT descripcio (#PCDATA)>
+      <!ELEMENT fragil (#PCDATA)>
+      <!ELEMENT refrigeracio (#PCDATA)>
+      <!ATTLIST objecte codi_enviament ID #REQUIRED>
+    <!ELEMENT enviament (data, retornable, entregat, prioritat, transport)>
+      <!ELEMENT data (#PCDATA)>
+      <!ELEMENT retornable (#PCDATA)>
+      <!ELEMENT entregat (#PCDATA)>
+      <!ELEMENT prioritat (#PCDATA)>
+      <!ELEMENT transport (#PCDATA)>
+    <!ELEMENT receptor (nom_receptor, telefon_receptor, email_receptor?,adresa_receptor)>
+      <!ELEMENT nom_receptor (#PCDATA)>
+      <!ELEMENT telefon_receptor (#PCDATA)>
+      <!ELEMENT email_receptor (#PCDATA)>
+      <!ELEMENT adresa_receptor (#PCDATA)>
+      <!ATTLIST receptor sexe_receptor CDATA #REQUIRED>
+      <!ATTLIST telefon_receptor pais_receptor CDATA #REQUIRED>

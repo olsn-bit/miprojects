@@ -1,0 +1,33 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE enviados SYSTEM "dtd_correu.dtd">
+<enviados>
+  <correu>
+    <emissor sexe_emissor="Home">
+      <nom_emissor>David Falco</nom_emissor>
+      <telefon_emissor pais_emissor="España">675676567</telefon_emissor>
+      <email_emissor>davidfalco@iesmontsia.org</email_emissor>
+      <adresa_emissor>Espanya,Tarragona,Sant Carles de la Ràpita,c/santapinga 23 planta 3 porta 2</adresa_emissor>
+    </emissor>
+    <objecte codi_enviament="id_1">
+      <tipus>paquet</tipus>
+      <pes>200g</pes>
+      <descripcio></descripcio>
+      <fragil>no</fragil>
+      <refrigeracio>no</refrigeracio>
+    </objecte>
+    <enviament>
+      <data>22/22/22</data>
+      <retornable>si</retornable>
+      <entregat>no</entregat>
+      <prioritat>alta</prioritat>
+      <transport>camio</transport>
+    </enviament>
+    <receptor sexe_receptor="Dona">
+      <nom_receptor>Alberta Das Santas</nom_receptor>
+      <telefon_receptor pais_receptor="España">763639373</telefon_receptor>
+      <email_receptor>albertadassantas@iesmontsia.org</email_receptor>
+      <adresa_receptor>Espanya,Tarragona,Sant Carles de la Ràpita,c/santapinga 23 planta 3 porta 3</adresa_receptor>
+    </receptor>
+  </correu>
+</enviados>

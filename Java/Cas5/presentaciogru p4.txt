@@ -1,0 +1,40 @@
+Una vegada hem acabat de fer totes les classes del cas, ara toca utilitzar-les i fer-les operatives per a treballar, 
+i aixo u farem a un arxiu apart anomenat test i aquest sols contidra un mètode que sira el main.
+
+Per començar cal tenir en compte que l'usuari afegira la informació manualment amb el teclat, aixo ho farem 
+amb l'ajuda de la classe Scanner.
+
+llegir titol
+
+
+A la captura podem veure que tenim diferents system.out.prints que demanen a l'usuari el tipus d'informacio
+que tenen que afegir. I amb aquestes dades crearem els primers objectes que siran l'obra i el teatre.
+
+Una vegada tenim l'obra i el teatre creats, ara tenim que crear els clients i aportar-lis un seient.
+
+Primer de tot crearem un array de tipus Client que l'usuari marcarà la seva llargada.
+
+Després hem creat un bucle for per a que recorri l'array de clients.
+
+Com podeu veure el pas numero 1 demanem al usuari les dades del client, el nom, l'edat, i els diners que té i 
+amb aquestes ja dades podem crear un objecte tipus Client.ç
+
+El pas 2 es comprovar si l'obra és per a majors d'edat i si el client te prou edat per a accedir. En cas de pugui
+seguirem el bucle  en cas contrari aplicarem la clausula  continue; que aquesta fà que el bucle for ometi 
+la iteracio actual i no s'executi el codi seguent.
+
+El pas 3 cobra el preu del teatre a cada usuari, en cas que no tingui prious diners utiltizem la sentencia continue;
+
+i l'ultim pas li demana al usuari una fila i un seient al teatre, tot aixo ho hem posat a un bucle per a que en cas 
+de que el seient i fila  abonat estigui ocupat per un altre client, llavors el bucle tornara a preguntar un
+ altra posicio al usuari.
+i per acabar el bucle afegirem l'usuari al teatre.
+
+També al final d'aquesta classe Test hem afegit un system.out.prnt que imprimeix el teatre. la nostra funcio 
+toString del teatre imprimeix les dades de l'0bra, del teatre, tots el clients i els seus seients.
+També imprimeix l'array del teatre seesio que representen les cadires del teatre amb un signe O si el seient 
+està buit i una X si esta ocupat.
+
+
+Una vegada hem executat l'eina javadoc podem veure que hens ha creat un arxiu html molt complet ja
+que podem veure tots els metodes de totes les clases i accedir a la seva explicaio.

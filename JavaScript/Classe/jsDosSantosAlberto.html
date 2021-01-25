@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Examen JavaScript</title>
+	</head>
+  <form>
+    <h1></h1>
+		  Introdueix un nombre<br>
+    <div><br>
+<button type="button" onclick="main();" </button>
+<p id="demo"></p>
+  <input id="num1" type="number">
+  <button type="button" onclick="main()"id="butt">Start</button>
+  <br><br>
+  </div>
+  <p id=array></p>
+  <p id=array2></p>
+  </form>
+  <script>
+  function main(){//Aqui creem la funció main
+    var finalprint = 0;
+    var finalprintlist = "";//Creem la variable que contindra l'array per mostrar-la al html
+    var promitjfinal = 0;//Creem la variable que contindra el promitj de tots els elements de l'array
+    var finalpair = "";//Creem la variable que contindra l'array per mostrar-la al html
+    var inp = parseInt(document.getElementById("num1").value);//Agafem el valor que ha introduit el usuari i el posem a aquesta variable
+    if (inp > 19 || inp < 5) {//Aqui creem un for loop per detectar si el nombre esta entre 4 i 19 i si no esta, llavors llença un error
+      alert("Invalid number, please use a number between 4 and 19")
+    } else {
+      var lista = new Array(inp);//Aqui creem un array amb la llargada indicada pel usuari
+      for (i = 0; i < inp; i++){//Aqui creem un for loop per donar-li un valor a tots els elements de l'array
+          lista[i] =  Math.floor((Math.random()*inp)+1);}
+      for (i = 0; i < inp; i++){//Aquest for s'encarrega de separar els elements per parelles i si la parella es queda sense, afegim un 0. També utilitzem la variable finalpair per posar-hi totes les parelles per mostrar-les posteriorment
+        if (lista[i] == undefined) {lista[i] = 0}
+        else if (lista[i+1] == undefined) {lista[i+1] = 0}
+        finalpair += (' ['+lista[i]+','+lista[i+1]+'] ').replace(",","");
+        finalprint += parseInt(""+lista[i]+lista[i+1])
+				finalprintlist += parseInt(""+lista[i]+lista[i+1])+","
+    }
+    for (i = 0; i < inp; i++){promitjfinal+=lista[i]}
+    finalprint = "<strong>Promitj de </strong>"+finalprintlist+"<strong> = </strong>"+"<strong>"+finalprint/inp+"</strong>";//Aqui afegim el promitj a la variable finalprint
+    document.getElementById("array").innerHTML =  "<strong>Parelles: </strong>"+finalpair;//Per acabar canviarem el valor html per posar la llista de parelles
+    document.getElementById("array2").innerHTML =  finalprint;// I també posarem finalprint que conté el promitj
+  }}
+  </script>
+</html>

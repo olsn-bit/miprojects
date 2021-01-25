@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<LINK REL=StyleSheet HREF="gestioprojectes.css" TYPE="text/css" MEDIA=screen>
+<script src="gestioprojectes.js"></script>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Gestió emp. Monstià</title>
+  <p id="hora">Data</p>
+
+</head>
+
+<body>
+
+  <div class="flex-container">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <div class="capsalera">
+      <h1>titol exepmle gestio _____</h1>
+      <h2>subtitol, canviar el link que se troba a lo icono de la casa pa ke funcione</h2>
+      <div class="flex-container2">
+
+        <div class="goback" onclick="window.history.back();">
+          <i class="fas fa-chevron-circle-left fa-2x"></i>
+          Go back
+        </div>
+        <div class="daymode">
+          <i class="fas fa-moon fa-2x"></i>
+          Night Mode
+        </div>
+
+        <script>
+          let button = document.querySelector('.daymode');
+
+          button.addEventListener('click', () => {
+            document.documentElement.classList.toggle('darkmode');
+
+          })
+        </script>
+        <div onclick="location.href='/public/menu.html';">
+          <i style="color:white" class="fas fa-home fa-2x"></i>
+        </div>
+
+        <div>
+          <button class="usericon"> </button>
+          <p class="user"> Admin </p>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div id="sidebar">
+      <header>
+        <a href="#">Projectes de undefined</a>
+      </header>
+      <ul class="nav">
+        <li>
+          <a id="projecte1" onclick="changeData(this.id)">
+            Projecte 1
+          </a>
+        </li>
+        <li>
+          <a id="projecte2" onclick="changeData(this.id)">
+            Projecte 2
+          </a>
+        </li>
+        <li>
+          <a id="projecte3" onclick="changeData(this.id)">
+            </i> Projecte 3
+          </a>
+        </li>
+        <li>
+          <a id="projecte4" onclick="changeData(this.id)">
+            </i> Projecte 4
+          </a>
+        </li>
+        <li>
+          <a id="projecte5" onclick="changeData(this.id)">
+            Projecte 5
+          </a>
+        </li>
+        <li>
+          <a id="projecte6" onclick="changeData(this.id)">
+            Projecte 6
+          </a>
+        </li>
+        <li>
+          <a id="projecte7" onclick="changeData(this.id)">
+            Projecte 7
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- Content -->
+    <div id="content">
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+
+        </div>
+      </nav>
+      <div class="container-fluid">
+
+        <form>
+          <h1 id="projectnametitol">Projecte "undefined"</h1>
+
+          <!-- NAME FIELD -->
+          <div class="form-field">
+            <label for="projectname" class="label--required">Nom del projecte</label>
+
+            <input id="projectname" required type="text" placeholder="Projecte 23">
+
+          </div>
+          <!-- Email FIELD -->
+          <div class="form-field">
+            <label for="email" class="label--required">Email del cap</label>
+
+            <input id="email" required type="text" placeholder="asdf@asdf.asdf">
+
+          </div>
+          <!-- PHONE FIELD -->
+          <div class="form-field">
+            <label for="description" class="label--required">Descripció del projecte</label>
+
+            <input id="description" required type="text" placeholder="......" />
+
+          </div>
+
+          <!-- EMAIL FIELD -->
+          <div class="form-field">
+            <label for="responsable" class="label--required">Responsable del Projecte</label>
+
+            <input id="responsable" required type="text" placeholder="Federico Jolderqués" />
+
+          </div>
+          <div class="form-field">
+            <label for="dataintroduida" class="label--required">Data del Projecte</label>
+
+            <input id="dataintroduida" required type="text" placeholder="10.10.2020" />
+
+          </div>
+
+
+
+          <!-- BUTTONS -->
+          <div>
+
+            <button type="submit" onclick="compruebaEmail()" class="boto">Editar</button>
+            <button type="submit" class="boto">Eliminar</button>
+
+          </div>
+
+        </form>
+        </p>
+      </div>
+    </div>
+
+
+  </div>
+
+
+
+
+
+
+
+</body>
+
+</html>

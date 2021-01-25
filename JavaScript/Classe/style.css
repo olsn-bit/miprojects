@@ -1,0 +1,11 @@
+p{
+  font-size: 25px;
+}
+
+.button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+
+}

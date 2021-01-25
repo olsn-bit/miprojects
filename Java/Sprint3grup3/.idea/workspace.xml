@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Sprint3:jar3" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d1f05dc4-7c28-4f72-aeb4-a1d27c98e5e0" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/exportToHTML" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1lhMnVd6D5UCib0OanAaihFCApv" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Escritorio" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="project.propDebugger" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="Finestres.CrudEmpleats" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Sprint3" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d1f05dc4-7c28-4f72-aeb4-a1d27c98e5e0" name="Default Changelist" comment="" />
+      <created>1608045039524</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1608045039524</updated>
+      <workItem from="1610411955897" duration="140000" />
+      <workItem from="1610412110427" duration="1501000" />
+      <workItem from="1610413763499" duration="3302000" />
+      <workItem from="1610461196625" duration="18418000" />
+      <workItem from="1610634216057" duration="19891000" />
+      <workItem from="1610710892837" duration="807000" />
+      <workItem from="1610711813672" duration="2240000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="166" y="27" width="1024" height="690" key="#Project_Structure" timestamp="1611241474835">
+      <screen x="0" y="27" width="1366" height="690" />
+    </state>
+    <state x="166" y="27" width="1024" height="690" key="#Project_Structure/0.27.1366.690@0.27.1366.690" timestamp="1611241474835" />
+    <state x="405" y="167" width="525" height="423" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1611241644602">
+      <screen x="0" y="27" width="1366" height="690" />
+    </state>
+    <state x="405" y="167" width="525" height="423" key="#com.intellij.ide.util.TreeClassChooserDialog/0.27.1366.690@0.27.1366.690" timestamp="1611241644602" />
+    <state x="452" y="133" key="FileChooserDialogImpl" timestamp="1611241655004">
+      <screen x="0" y="27" width="1366" height="690" />
+    </state>
+    <state x="452" y="133" key="FileChooserDialogImpl/0.27.1366.690@0.27.1366.690" timestamp="1611241655004" />
+    <state x="157" y="27" width="1042" height="690" key="SettingsEditor" timestamp="1611241658657">
+      <screen x="0" y="27" width="1366" height="690" />
+    </state>
+    <state x="157" y="27" width="1042" height="690" key="SettingsEditor/0.27.1366.690@0.27.1366.690" timestamp="1611241658657" />
+  </component>
+</project>
