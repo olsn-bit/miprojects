@@ -134,7 +134,7 @@ def ARAM():
         while pas is None:
             pas = py.locateCenterOnScreen("TINPUT.PNG")
         py.click(pas)
-        pyautogui.typewrite('4987235892alto')
+        pyautogui.typewrite('PASSWORD')
         LOG = None
         while LOG is None:
             LOG = pyautogui.locateCenterOnScreen("LOG.PNG")
